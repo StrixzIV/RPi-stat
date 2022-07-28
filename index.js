@@ -6,7 +6,7 @@ const PORT = 8000
 
 app.use(express.json())
 
-app.get('/', async (req, res) => {
+app.get('/statistic', async (req, res) => {
 
     const memory = await si.mem()
     const cpu = await si.cpu()
