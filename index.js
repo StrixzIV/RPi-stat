@@ -14,6 +14,8 @@ app.get('/statistic', async (req, res) => {
 
     res.status(200).send({
         cpu: {
+            speed: `${cpu.speed} GHz`,
+            voltage: `${cpu.voltage} V`,
             tempurature: `${cpu_temp.main}˚C`,
         },
         memory: {
