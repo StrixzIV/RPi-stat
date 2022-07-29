@@ -19,7 +19,7 @@ app.get('/statistic', async (req, res) => {
         memory: {
             total: `${memory.total / (1024 * 1024 * 1024)} GB`,
             free: `${memory.free / (1024 * 1024 * 1024)} GB`,
-            used_percentage: `${memory.used} %`
+            used_percentage: `${memory.used / (10 ** 7)} %`
         }
     })
 })
